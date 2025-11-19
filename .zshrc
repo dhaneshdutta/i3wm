@@ -13,7 +13,6 @@ alias fetch='fastfetch'
 alias startmysql='doas rc-service mysql start'
 alias stopmysql='doas rc-service mysql stop'
 alias tlp-stat='doas tlp-stat'
-alias rape='echo "Akshat is now raped, cum is leaking from his anus."'
 
 # portage aliases
 alias makeconf='doas nvim /etc/portage/make.conf'
