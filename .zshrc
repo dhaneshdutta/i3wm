@@ -1,0 +1,37 @@
+export ZSH=$HOME/.oh-my-zsh
+ZSH_THEME="fwalch"
+
+# aliases
+alias vim='nvim'
+alias dvim='doas nvim'
+alias ncdu='doas ncdu /'
+alias bluetooth='blueman-manager'
+alias shutdown='shutdown now'
+alias reboot='doas reboot'
+alias poweroff='doas poweroff'
+alias fetch='fastfetch'
+alias startmysql='doas rc-service mysql start'
+alias stopmysql='doas rc-service mysql stop'
+alias tlp-stat='doas tlp-stat'
+alias rape='echo "Akshat is now raped, cum is leaking from his anus."'
+
+# portage aliases
+alias makeconf='doas nvim /etc/portage/make.conf'
+alias dispatch-conf='doas dispatch-conf'
+alias emerge='doas emerge'
+alias eselect='doas eselect'
+alias eclean-pkg='doas eclean-pkg'
+alias ecleand='doas eclean-pkg -d; doas eclean-dist -d; doas eclean-kernel -n 1'
+alias ecleandp='doas eclean-pkg -dp; doas eclean-dist -dp; doas eclean-kernel -p -n 1'
+alias es='doas emerge --search'
+alias ei='doas emerge -av'
+alias ess='doas emerge --sync'
+alias eu='doas emerge -avuDN @world'
+
+# plugins
+source $ZSH/oh-my-zsh.sh
+source /usr/share/zsh/site-functions/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/site-functions/zsh-autosuggestions.zsh
+
+# envs
+export CLASSPATH=".:/usr/share/java-libs/sqlite-jdbc-3.51.0.0.jar"
