@@ -1,0 +1,9 @@
+add ~/music/Music/
+colorscheme green
+q
+colorscheme gray-88
+set output_plugin=pulse
+set output_plugin=pulseaudio
+set output_plugin=apulse
+set output_plugin=pipewire
+set output_plugin=op
